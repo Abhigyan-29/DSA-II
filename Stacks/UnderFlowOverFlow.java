@@ -13,7 +13,19 @@ public class UnderFlowOverFlow {
         System.out.println(st);
         st.pop();
         System.out.println(st);
-
+        st.pop();
+        System.out.println(st);
+        st.pop();
+        System.out.println(st);
+        st.pop();
+        System.out.println(st);
+        st.pop();
+        System.out.println(st);
+        //empty stack se pop krna is stack underflow
+//        st.pop();
+//        System.out.println(st);
+//if your stack is full , and still you are trying
+        // to push --> stack overflow
 
     }
 
