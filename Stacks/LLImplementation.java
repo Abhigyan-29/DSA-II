@@ -28,7 +28,11 @@ public class LLImplementation {
             head=head.next;
             return x;
         }
-        int peek()
+        //---------
+        int peek(){
+            return 0;
+        }
+        //---------
         void display(){
             node temp = head;
             while(temp!=null){
