@@ -2,14 +2,14 @@ package Stacks;
 
 import java.util.*;
 //next largest element to right
-public class NextGreaterElement {
+public class NextLargestElementR {
     public static void findNextGreaterElements(int[] arr) {
         int n = arr.length;
         int[] result = new int[n];  // Array to store results
         Stack<Integer> stack = new Stack<>();  // Stack to keep track of elements
 
         // Traverse the array from the right to left
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = 0; i < n; i++) {
             // Pop elements from the stack that are smaller than the current element
             while (!stack.isEmpty() && stack.peek() <= arr[i]) {
                 stack.pop();
@@ -34,7 +34,7 @@ public class NextGreaterElement {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4, 5, 2, 25, 7, 8};
+        int[] arr = {1,3,2,4};
         findNextGreaterElements(arr);
     }
 }
